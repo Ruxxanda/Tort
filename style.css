@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+p {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Kameron";
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: "Kameron";
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    background-image: linear-gradient(270deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+h3 {
+    font-family: "Kanit";
+    font-weight: 300;
+    font-size: 25px;
+}
+
+button {
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    border: none;
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+img {
+    width: 70px;
+}
+
+
+/* bara de navigare */
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 10px 10%;
+}
+
+header nav .logo {
+    width: 40px;
+}
+
+header nav .linkuri {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+header nav .linkuri a {
+    font-family: 'Franklin Gothic Medium';
+}
+
+header nav .linkuri a:hover,
+header nav .linkuri a.acum {
+    color: #FF6A88;
+}
+
+header nav .until {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header nav .until i {
+    font-size: 25px;
+    background-image: linear-gradient(270deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* header-ul */
+header .hed {
+    margin: 0 10%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .hed .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+
+header .hed img {
+    width: 40%;
+}
+
+section {
+    margin-top: 200px;
+    margin: 0 10%;
+}
+
+/* torturi populare */
+section.tort-popular {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
+section.tort-popular .torturi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+section.tort-popular .torturi .tort {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+section.tort-popular .torturi .tort p {
+    font-weight: 800;
+}
+
+section.tort-popular .torturi .tort .imagine {
+    width: 100%;
+    height: 400px;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.tort-popular .torturi .tort .imagine img {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+
+/* reducere */
+.reducere {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    margin: 0;
+    margin-top: 100px;
+    padding: 10%;
+}
+
+.reducere .text-top, 
+.reducere .text-bottom {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 40px;
+    color: #ffffffbd;
+    will-change: transform;
+}
+
+.reducere .text-top {
+    top: 0;
+}
+
+.reducere .text-bottom {
+    bottom: 0;
+}
+
+.reducere .continut {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reducere .continut .text {
+    width: 50%;
+}
+
+.reducere .continut .text h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.reducere .continut .text h2 span {
+    font-weight: 2000px;
+    font-size: 70px;
+}
+
+.reducere .continut .text button {
+    background: #ffffff;
+}
+
+.reducere .continut .timer {
+    text-align: end;
+    position: absolute;
+    right: 10%;
+    margin-top: 150px;
+}
+
+.reducere .continut .timer p {
+    font-size: 30px;
+    color: white;
+}
+
+.reducere .continut .timer span.time {
+    color: #ffffff;
+    font-size: 200px;
+}
+
+
+
+/* recenzii */
+section {
+    margin: 0 10%;
+    margin-top: 100px;
+}
+
+section.recenzii {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+section.recenzii .clienti {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+section.recenzii .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+section.recenzii .clienti .pers {
+    width: 100%;
+    height: 300px;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 40px;
+    color: #ffffff;
+}
+
+section.recenzii .clienti .pers .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+section.recenzii button {
+    color: #ffffff;
+}
+
+
+/* creare de tort informatii */
+section.creare {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section.creare .text {
+    width: 50%;
+}
+
+section.creare img {
+    width: 30%;
+}
+
+
+/* footer */
+footer {
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    color: #000;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-section {
+    position: relative;
+}
+
+.footer-section h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s ease, left 0.3s ease;
+}
+
+.footer-section:hover h3::after {
+    width: 70%;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    font-size: 0.95em;
+    line-height: 1.8;
+    color: #000;
+}
+
+.footer-section p:hover,
+.footer-section ul li a:hover,
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffffd4;
+    color: #FF6A88;
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #ffffff;
+    color: #FF6A88;
+    transform: scale(1.1);
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.footer-bottom p {
+    font-size: 15px;
+}
